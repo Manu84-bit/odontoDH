@@ -234,9 +234,6 @@ table input:disabled {
     background: var(--card-color);
 }
 
-/* input[name=lastName] {
-    pointer-events:all;
- } */
 
 tr {
     line-height: 4rem;
@@ -266,7 +263,8 @@ td {
 }
 
 td img {
-   margin-left: 3rem;
+   margin-right: 2rem;
+   margin-left: 1rem;
    color: var(--side-bar-color);
    transition: 1s;
 }
