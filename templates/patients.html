@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Pacientes</title>
 </head>
-<body class="gray-bg">
-    <section class="side-bar">
+<body class="gray-bg patient">
+    <section class="side-bar patient">
         <h1>ODONTO-DH</h1>
          <div> 
             <h3>Lionel Messi</h3>
@@ -33,14 +33,42 @@
            </div>
            <div class="header-2">
                <h3>Lista de Pacientes</h3>
-               <button>AGREGAR PACIENTE</button>
+               <button class="add patient-btn">AGREGAR PACIENTE</button>
            </div>
         </header>
-        <table>
-            <thead></thead>
-            <tbody></tbody>
+        <table class="patient-table">
+              <colgroup>
+       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 30%;">
+       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 12%;">
+    </colgroup>
+            <thead>
+                 <tr>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+                    <th>Documento</th>
+                    <th>Domicilio</th>
+                    <th>Fecha de alta</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-patient">
+                    <td><input type="text" name="lastName" value="Rodríguez" maxlength="30" disabled></td>
+                    <td><input type="text" name="fisrtName" value="James" maxlength="30" disabled></td>
+                    <td><input type="text" name="document" value="7305477760" maxlength="6" disabled></td>
+                    <td class="td-address"><input type="text" name="address" value="Av. Siempreviva  742" maxlength="50" disabled></td>
+                    <td><input type="date" name="date-discharge" value="" maxlength="6" disabled></td>
+                    <td><img src="../static/img/save.svg" class="save hide" alt=""><img class ="edit" src="../static/img/edit.svg" alt="editar"><img class="delete" src="../static/img/delete.svg" alt="eliminar"></td>
+                </tr>
+            </tbody>
         </table>
 
     </section>
+    <script src="../static/js/custom.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
