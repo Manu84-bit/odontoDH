@@ -41,9 +41,31 @@
                <button class="add booking-btn">AGREGAR TURNO</button>
            </div>
         </header>
-        <table>
-            <thead></thead>
-            <tbody></tbody>
+        <table class="booking-table">
+            <thead>
+                <th>Paciente</th>
+                <th>Odontólogo</th>
+                <th>Fecha-hora</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>
+                        <select name="patient-select" id="patient-select" disabled>
+                            <option value="seleccione el paciente" selected disabled>Elija un paciente</option>
+                            <option value="James Rodríguez">James Rodríguez</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="dentist-select" id="dentist-select" disabled>
+                            <option value="seleccione el odontólogo" selected disabled>Elija un odontólogo</option>
+                            <option value="James Rodríguez">Cristiano Ronaldo</option>
+                        </select>
+                    </td>
+                    <td><input type="datetime-local" name="booking-date" value="" maxlength="20" disabled></td>
+                    <td><img src="../static/img/save.svg" class="save hide" alt=""><img class ="edit" src="../static/img/edit.svg" alt="editar"><img class="delete" src="../static/img/delete.svg" alt="eliminar"></td> 
+                </tr>
+            </tbody>
         </table>
     </section>
     <script src="../static/js/custom.js"></script>
