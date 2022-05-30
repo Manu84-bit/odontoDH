@@ -211,7 +211,8 @@ button:active {
     margin-bottom: 0.8rem;
     padding-block: 0.5rem;
     padding-left: 0.8rem;
-    margin-left: 20%;
+    margin-left: 80%;
+    margin-right: 2rem;
 }
 
 .ham-menu {
@@ -361,6 +362,11 @@ td img:hover{
 }
 
 @media screen and (max-width: 1120px){
+
+    .header-1 input {
+        margin-left: 50%;
+    }
+
 	table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
@@ -455,6 +461,9 @@ td img:hover{
         width: 100vw;
     }
 
+    .header-1 input {
+        margin-left: 20%;
+    }
     .ham-menu {
         display: inline;
         position: relative;
