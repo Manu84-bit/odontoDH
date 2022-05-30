@@ -491,6 +491,10 @@ td img:hover{
        margin-left: 0.8rem;
    }
 
+   .dentists-table input{
+       width: 100%;
+   }
+
    .booking-table {
      margin-left: 1rem;
    }

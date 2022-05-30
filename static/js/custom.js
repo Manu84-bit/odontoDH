@@ -102,7 +102,6 @@ window.onload = ()=>{
     function deleteRow(){
       for(let index = 0; index < deleteBtns.length; index++){
         deleteBtns[index].addEventListener("click", ()=>{
-          console.log("deltete btn pressed")
           swal({
             title: "¿Está seguro de eliminar este registro?",
             text: "Una vez eliminado, se borrará de la base datos.",
